@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 namespace RestaurantMenu
 {
     internal class MenuItem
-    {
-        public MenuItem(double price, string name, string description, string category, bool isNew, DateTime dateCreated)
+    {        
+        public double Price { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Category { get; set; }
+        public bool IsNew { get; set; }
+
+        public MenuItem(double price, string name, string description, string category, bool isNew)
         {
             Price = price;
             Name = name;
             Description = description;
             Category = category;
             IsNew = isNew;
-            DateCreated = dateCreated;
         }
 
-        public double Price { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public bool IsNew { get; set; }
-        public DateTime DateCreated { get; set; }
+
     }
 }

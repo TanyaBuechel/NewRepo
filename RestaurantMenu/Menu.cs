@@ -8,7 +8,13 @@ namespace RestaurantMenu
 {
     internal class Menu
     {
+        public DateTime LastUpdated { get; }
         public List<MenuItem> Items { get; set; }
-        public DateTime LastUpdated { get; set; }
+
+        public Menu(DateTime lastUpdated, List<MenuItem> items)
+        {
+            LastUpdated = lastUpdated;
+            Items = items;
+        }
     }
 }
